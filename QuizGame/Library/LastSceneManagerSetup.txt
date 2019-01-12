@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/QuizGame.unity
+- path: Assets/Scenes/QuizGame.unity
   isLoaded: 1
   isActive: 1
