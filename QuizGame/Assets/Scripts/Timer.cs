@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public Text text;
-    public int timeLeft = 30;
-    public int index;
+    private int timeLeft = 30;
+    public Image loading;
+
+    static int index = 10;
 
     void Start()
     {
         StartCoroutine("LoseTime");
+        index++;
     }
 
     private void Update()
@@ -22,7 +25,7 @@ public class Timer : MonoBehaviour
         if(timeLeft <= 0) {
             StopCoroutine("LoseTime");
             text.text = "Time Up";
-            SceneManager.LoadScene(index+1);
+            SceneManager.LoadScene(index);
         }
     }
 
@@ -31,8 +34,13 @@ public class Timer : MonoBehaviour
         while (true) {
 
             yield return new WaitForSeconds(1);
+            float fill = (float)timeLeft / 32;
+            loading.fillAmount = fill;
             timeLeft--;
+           
+
         }
     }
+   
 
 }

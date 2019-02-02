@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class WaitTimeToChangeScene : MonoBehaviour
 {
-    public int index;
-    private int waitFor = 5;
+    static  int index = 6;
+    private int waitFor = 6;
    
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("WaitTime");
+        index++;
     }
 
     // Update is called once per frame
@@ -21,7 +22,9 @@ public class WaitTimeToChangeScene : MonoBehaviour
     {
         if ( waitFor<=0) {
             StopCoroutine("WaitTime");
-            SceneManager.LoadScene(index + 1);
+            //index = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(index);
+            
     
         }
     }

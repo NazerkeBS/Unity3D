@@ -6,16 +6,18 @@ using UnityEngine.UI;
 public class ShowHint : MonoBehaviour
 { 
 
-    [SerializeField]
-    private GameObject flag;
+
+    public GameObject flag;
 
     private int timeElapsed = 6;
 
 
     public void Show()
     {
-
-        StartCoroutine("EnableImage");
+        
+            StartCoroutine("EnableImage");
+        
+       
 
     }
     private void Update()

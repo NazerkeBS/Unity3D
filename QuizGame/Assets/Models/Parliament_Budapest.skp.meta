@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 10b416675a02c48a7924bcd5a45155f3
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000
+  assetHash:
+    serializedVersion: 2
+    Hash: fc3699bb6a656d93cf0a3b72f0278a21
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -172.33505, y: 20.877617, z: -75.06015}
+      lookAt: {x: 39186.766, y: 3583.65, z: 37865.094}
+      up: {x: -0.046821572, y: 0.99788314, z: -0.04513359}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: _defaultMat
+    2100002: _88
+    2100004: _5
+    2100006: _4
+    2100008: _2
+    2100010: _86
+    2100012: _1
+    2100014: _3
+    2100016: _6
+    2100018: _40
+    2100020: _8
+    2100022: _21
+    2100024: _11
+    2100026: _12
+    2100028: _13
+    2100030: _74
+    2100032: _16
+    2100034: _14
+    2100036: _9
+    2100038: _17
+    2100040: _19
+    2100042: _22
+    2100044: _18
+    2100046: _23
+    2100048: _34
+    2100050: _26
+    2100052: _27
+    2100054: _28
+    2100056: _25
+    2100058: _31
+    2100060: _30
+    2100062: _33
+    2100064: _36
+    2100066: _37
+    2100068: _LightGray_
+    2100070: _55
+    2100072: _39
+    2100074: _42
+    2100076: _38
+    2100078: _41
+    2100080: _20
+    2100082: _32
+    2100084: _43
+    2100086: _51
+    2100088: _50
+    2100090: _48
+    2100092: _52
+    2100094: _54
+    2100096: _57
+    2100098: _56
+    2100100: _75
+    2100102: _63
+    2100104: _59
+    2100106: _58
+    2100108: _60
+    2100110: _66
+    2100112: _67
+    2100114: _68
+    2100116: _69
+    2100118: _70
+    2100120: _71
+    2100122: _76
+    2100124: _64
+    2100126: _84
+    2100128: _35
+    2100130: _61
+    2100132: _65
+    2100134: _78
+    2100136: _77
+    2100138: 96,96,96
+    2100140: '[0135_DarkGray]'
+    2100142: _80
+    2100144: _79
+    2100146: _81
+    2100148: _15
+    2100150: _83
+    2100152: _85
+    2100154: _91
+    2100156: _90
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Mesh Parliament_Budapest
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
