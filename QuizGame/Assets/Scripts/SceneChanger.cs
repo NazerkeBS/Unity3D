@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
 
 public class SceneChanger : MonoBehaviour
 {
-
 
     public void ChangeScene() {
 
@@ -31,6 +28,5 @@ public class SceneChanger : MonoBehaviour
     public void WrongAnswer4() {
         SceneManager.LoadScene("Wrong4");
     }
-
 
 }

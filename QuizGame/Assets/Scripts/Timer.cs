@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -10,7 +9,7 @@ public class Timer : MonoBehaviour
     private int timeLeft = 30;
     public Image loading;
 
-    static int index = 10;
+    static int index = 11;
 
     void Start()
     {
@@ -41,6 +40,4 @@ public class Timer : MonoBehaviour
 
         }
     }
-   
-
 }

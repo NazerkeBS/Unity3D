@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -11,7 +10,7 @@ public class TextMeshProWaver : MonoBehaviour
     private struct VertexAnim {
 
         //public float angleRange;
-//        public float angle;
+        // public float angle;
         public float speed;
     }
 

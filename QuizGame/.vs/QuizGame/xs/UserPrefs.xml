@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{D7EF783E-1F81-FC80-230F-8503BB368E26}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Hint.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BackMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/FlashTimer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ShowHint.cs" Line="1" Column="1" />
-      <File FileName="Assets/NewUnlitShader.shader" Line="19" Column="32" />
-      <File FileName="Assets/Scripts/Hint.cs" Line="14" Column="31" />
+      <File FileName="Assets/Scripts/CorrectSceneChanger.cs" Line="41" Column="33" />
+      <File FileName="Assets/Scripts/OpenDoor.cs" Line="29" Column="64" />
+      <File FileName="Assets/Scripts/Timer.cs" Line="12" Column="26" />
+      <File FileName="Assets/Scripts/Spinner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StartGame.cs" Line="6" Column="18" />
+      <File FileName="Assets/Scripts/BackMenu.cs" Line="9" Column="21" />
+      <File FileName="Assets/Scripts/ManageHints.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CheckCorrectAnswer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: redTexture
   m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 51f3c05cea4d740bd8c6cced568c61ad, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2c51b8bba63cc4617a81d9d7bd6f4167, type: 3}
         m_Scale: {x: 12, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

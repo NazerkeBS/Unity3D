@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
+﻿using UnityEngine;
 
 public class Hint : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject o;
+    public GameObject obj;
 
-    // Start is called before the first frame update
+    /* Hide the object in the beginning */
     void Start()
     {
-       o.SetActive(false);
+
+        obj.SetActive(false);
     }
 
   

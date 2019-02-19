@@ -42,33 +42,84 @@ public class ChooseLetter : MonoBehaviour
         }
      }
 
-    void checkResult(Button[] blankButtons, Button[] letteredButtons) { 
-        if(result == "BUDAPEST") {
+    void checkResult(Button[] blankButtons, Button[] letteredButtons)
+    {
+        if (SceneManager.GetActiveScene().name.Equals("Scene5")) {
 
-            Debug.Log("Congrats");
-            letteredObject.SetActive(false);
-            congrats.SetActive(true);
-            ScoreCounter.sum += 5;
-
-            waiter = FindObjectOfType<TimeWaiter>();
-            waiter.Wait(5, () => { SceneManager.LoadScene("Scene6"); });
-
-        }
-
-        if (result != "BUDAPEST") {
-            for(int i=0; i<blankButtons.Length; i++) {
-                Text clearButtonText = blankButtons[i].GetComponentInChildren<Text>();
-                clearButtonText.text = "";
+            if (result == "BUDAPEST")
+            {
+                PrintCongrats();
+                ScoreCounter.sum += 10;
+                NextScene("Scene6");
             }
-            index = 0;
-            result = "";
-          
-        }
 
+            if (result != "BUDAPEST")
+            {
+                ClearInputField(blankButtons);
+            }
+        }else if (SceneManager.GetActiveScene().name.Equals("Scene6")) {
+            if (result == "HIMEJI")
+            {
+                PrintCongrats();
+                ScoreCounter.sum += 10;
+                NextScene("Scene7");
+            }
+
+            if (result != "HIMEJI")
+            {
+                ClearInputField(blankButtons);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("Scene7"))
+        {
+            if (result == "BARCELONA")
+            {
+                PrintCongrats();
+                ScoreCounter.sum += 10;
+                NextScene("Scene8");
+            }
+
+            if (result != "BARCELONA")
+            {
+                ClearInputField(blankButtons);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("Scene8"))
+        {
+            if (result == "NEWYORK")
+            {
+                PrintCongrats();
+                ScoreCounter.sum += 10;
+                NextScene("Scene9");
+            }
+
+            if (result != "NEWYORK")
+            {
+                ClearInputField(blankButtons);
+            }
+        }
 
     }
 
-  
 
+    private void NextScene(string sceneName) {
+        waiter = FindObjectOfType<TimeWaiter>();
+        waiter.Wait(5, () => { SceneManager.LoadScene(sceneName); });
+    }
 
+    private void PrintCongrats() {
+        Debug.Log("Congrats");
+        letteredObject.SetActive(false);
+        congrats.SetActive(true);
+    }
+
+    private void ClearInputField(Button[] blankButtons) {
+        for (int i = 0; i < blankButtons.Length; i++)
+        {
+            Text clearButtonText = blankButtons[i].GetComponentInChildren<Text>();
+            clearButtonText.text = "";
+        }
+        index = 0;
+        result = "";
+    }
 }

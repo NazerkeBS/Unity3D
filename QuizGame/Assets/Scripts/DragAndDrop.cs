@@ -6,7 +6,7 @@ public class DragAndDrop : MonoBehaviour
 {
     private bool isMouseDown;
 
-    public GameObject choiceToDrag;
+    public GameObject choiceToDrag; // correct button 
     public GameObject dropHolder;
     public TimeWaiter waiter;
     public GameObject correctMusicPlayer;
@@ -66,56 +66,57 @@ public class DragAndDrop : MonoBehaviour
                 AudioSource backgroundMusic = GameObject.Find("BackgroundMusic").GetComponent<AudioSource>();
 
                 enabled = false;
-                if (text.text == "Rome")
-                {
-                    Debug.Log("Correct");
-
-                    AudioSource correctMusicPlay = correctMusicPlayer.GetComponent<AudioSource>();
-                    correctMusicPlay.playOnAwake = true;
-                    backgroundMusic.Stop();
-
-                    correctMusicPlay.Play();
-
-                    shaderColor.material.color = Color.green;
-                    ScoreIncrement();
-
-                }
-                else
-                {
-                    Debug.Log("Wrong");
-                    AudioSource wrongMusicPlay = wrongMusicPlayer.GetComponent<AudioSource>();
-                    wrongMusicPlay.playOnAwake = true;
-                    backgroundMusic.Stop();
-                    wrongMusicPlay.Play();
-
-                    shaderColor.material.color = Color.red;
-
-                }
-                waiter = FindObjectOfType<TimeWaiter>();
-
-                GameObject manager = GameObject.Find("manager");
-                choices = manager.GetComponentsInChildren<Transform>();
-
-                waiter.Wait(2, () => {
-                    foreach (Transform t in choices)
+                if(SceneManager.GetActiveScene().name == "Scene14") {
+                    if (text.text == "Rome")
                     {
-                        Destroy(t.gameObject);
+                        Debug.Log("Correct");
+                        CorrectAnswerPlay(backgroundMusic);
                     }
+                    else
+                    {
+                        Debug.Log("Wrong");
+                        WrongAnswerPlay(backgroundMusic);
 
-                });
-               
-                waiter.Wait(3, () => {
+                    }
+                    ChangeScene("Scene15");
+                }
+                if (SceneManager.GetActiveScene().name == "Scene15")
+                {
+                    if (text.text == "Barcelona")
+                    {
+                        Debug.Log("Correct");
+                        CorrectAnswerPlay(backgroundMusic);
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong");
+                        WrongAnswerPlay(backgroundMusic);
 
-                    SceneManager.LoadScene("Scene15");
-                    Destroy(wrongMusicPlayer.gameObject);
-                    Destroy(correctMusicPlayer.gameObject);
+                    }
+                    ChangeScene("Scene16");
+                }
+                if (SceneManager.GetActiveScene().name == "Scene16")
+                {
+                    if (text.text == "Toronto")
+                    {
+                        Debug.Log("Correct");
+                        CorrectAnswerPlay(backgroundMusic);
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong");
+                        WrongAnswerPlay(backgroundMusic);
 
-                    });
+                    }
+                    ChangeScene("Scene17");
+                }
+
             }
 
         }
        
     }
+
     //get the clicked object
     private GameObject GetClickedObject(out RaycastHit hit) {
         GameObject target = null;
@@ -126,12 +127,45 @@ public class DragAndDrop : MonoBehaviour
         return target;
     }
    
-    //increment total score
+    /* increment total score */
     private void ScoreIncrement() { 
-    
-            ScoreCounter.sum += 5;
-        
+            ScoreCounter.sum += 20;
     }
 
+    private void CorrectAnswerPlay(AudioSource backgroundMusic) {
+     
+        AudioSource correctMusicPlay = correctMusicPlayer.GetComponent<AudioSource>();
+        correctMusicPlay.playOnAwake = true;
+        backgroundMusic.Stop();
+        correctMusicPlay.Play();
+        shaderColor.material.color = Color.green;
+        ScoreIncrement();
+    }
 
+    private void WrongAnswerPlay(AudioSource backgroundMusic) {
+
+        AudioSource wrongMusicPlay = wrongMusicPlayer.GetComponent<AudioSource>();
+        wrongMusicPlay.playOnAwake = true;
+        backgroundMusic.Stop();
+        wrongMusicPlay.Play();
+        shaderColor.material.color = Color.red;
+    }
+
+    private void ChangeScene(string sceneName) {
+        waiter = FindObjectOfType<TimeWaiter>();
+        GameObject manager = GameObject.Find("manager");
+        choices = manager.GetComponentsInChildren<Transform>();
+        waiter.Wait(2, () => {
+            foreach (Transform t in choices)
+            {
+                t.gameObject.SetActive(false);
+            }
+        });
+        waiter.Wait(3, () => {
+            SceneManager.LoadScene(sceneName);
+            wrongMusicPlayer.gameObject.SetActive(false);
+            correctMusicPlayer.gameObject.SetActive(false);
+        });
+
+    }
 }

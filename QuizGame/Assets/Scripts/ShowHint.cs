@@ -1,43 +1,35 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ShowHint : MonoBehaviour
 { 
 
-
     public GameObject flag;
 
-    private int timeElapsed = 6;
+    private int timeElapsed = 4;
 
-
+    /* When the button is clicked, show the hidden object */
     public void Show()
     {
-        
-            StartCoroutine("EnableImage");
-        
-       
-
+        timeElapsed = 4;
+        StartCoroutine("EnableObject");
     }
     private void Update()
     {
         if (timeElapsed <= 0)
         {
-            StopCoroutine("EnableImage");
             flag.SetActive(false);
-
+            StopCoroutine("EnableObject");
         }
     }
 
-    IEnumerator EnableImage()
+    IEnumerator EnableObject()
     {
         while (true)
         {
             flag.SetActive(true);
             yield return new WaitForSeconds(1);
             timeElapsed--;
-
 
         }
     }
