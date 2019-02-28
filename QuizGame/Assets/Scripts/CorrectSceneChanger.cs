@@ -26,30 +26,36 @@ public class CorrectSceneChanger : MonoBehaviour
                 if (SceneManager.GetActiveScene().name == "QuizGame") {
                     Transform[] buttons = level1Manager.GetComponentsInChildren<Transform>();
                     if (hit.transform.name == "ChoiceB") { //Paris
+                        CorrectAnswerCounter.sum += 1;
                         InOrderCorrectAnswer(buttons);
                     }
                     else if(hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceD") {
+                        WrongAnswerCounter.sum += 1; 
                         InOrderWrongAnswer(buttons);
                     }
                 }
                 else if (SceneManager.GetActiveScene().name == "Scene2") {
                     Transform[] buttons = level1Manager.GetComponentsInChildren<Transform>();
                     if (hit.transform.name == "ChoiceC") //Pisa
-                    {
+                    {   
+                        CorrectAnswerCounter.sum += 1; 
                         InOrderCorrectAnswer(buttons);
                     }
                     else if (hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceD")
                     {
+                        WrongAnswerCounter.sum += 1; 
                         InOrderWrongAnswer(buttons);
                     }
                 }
                 else if (SceneManager.GetActiveScene().name == "Scene3") {
                     Transform[] buttons = level1Manager.GetComponentsInChildren<Transform>();
                     if (hit.transform.name == "ChoiceD") { // Kuala Lumpur
+                        CorrectAnswerCounter.sum += 1;
                         InOrderCorrectAnswer(buttons);
                     }
                     else if (hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceC")
                     {
+                        WrongAnswerCounter.sum += 1; 
                         HideButtons(buttons);
                         DisableObjects();
                         ActivateAndPlayWrongMusicPlayer();
@@ -59,14 +65,17 @@ public class CorrectSceneChanger : MonoBehaviour
                 else if (SceneManager.GetActiveScene().name == "Scene4") {
                     Transform[] buttons = level1Manager.GetComponentsInChildren<Transform>();
                     if (hit.transform.name == "ChoiceA") { //London
+                        CorrectAnswerCounter.sum += 1; 
                         InOrderCorrectAnswer(buttons);
                     }
                     else if (hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceD")
                     {
+                        WrongAnswerCounter.sum += 1; 
                         HideButtons(buttons);
                         DisableObjects();
                         ActivateAndPlayWrongMusicPlayer();
                         ChangeScene();
+
 
                     }
                 }
@@ -85,6 +94,7 @@ public class CorrectSceneChanger : MonoBehaviour
         DisableObjects();
         ActivateAndPlayWrongMusicPlayer();
         ChangeScene();
+       
     }
     private void HideButtons(Transform[] buttons) {
         foreach (Transform obj in buttons)

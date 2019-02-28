@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 1cafdaa385042401bb777d7644202c37
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 1e7fc753e141ebf0bae4ec149eb4e246
+  longitude: -73.95892270931859
+  latitude: 40.78298391407138
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -56.837868, y: 18.361591, z: 85.813416}
+      lookAt: {x: 9.822274, y: 16.36591, z: -11.837057}
+      up: {x: 0.009515106, y: 0.9998576, z: -0.013938682}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Component#2
+    100002: Component#26
+    100004: Component#26 1
+    100006: Component#6
+    100008: Component#6 1
+    100010: Google Earth Terrain
+    100012: Group 12
+    100014: Group 6
+    100016: Group#4
+    100018: //RootNode
+    400000: Component#2
+    400002: Component#26
+    400004: Component#26 1
+    400006: Component#6
+    400008: Component#6 1
+    400010: Google Earth Terrain
+    400012: Group 12
+    400014: Group 6
+    400016: Group#4
+    400018: //RootNode
+    2100000: vwhite
+    2100002: gugg-top
+    2100004: gugg-top1
+    2100006: 01 - Default1
+    2100008: brown land
+    2100010: _3
+    2100012: top view of oval
+    2100014: up mirror 3
+    2100016: mirror
+    2100018: top brown
+    2100020: black
+    2100022: copper curve
+    2100024: side door
+    2100026: top view corner
+    2100028: 10 - Default1
+    2100030: corner to entrance window 2
+    2100032: corner to entrance window 1
+    2100034: top view of small narrow building
+    2100036: museum
+    2100038: giugg1
+    2100040: gugg2
+    2100042: mirror 1
+    2100044: top view big rectangular building
+    2100046: big rectangular building side 4
+    2100048: big rectangular building side 2_
+    2100050: top view of small narrow building 2
+    2100052: Google Earth Snapshot1
+    2100054: big rectangular building side 1_
+    2100056: main entrance left_
+    2100058: main entrance right copy
+    2100060: main entrance copy
+    2100062: circular window
+    2300000: Component#2
+    2300002: Component#26
+    2300004: Component#26 1
+    2300006: Component#6
+    2300008: Component#6 1
+    2300010: Google Earth Terrain
+    2300012: Group 12
+    2300014: Group 6
+    2300016: Group#4
+    2300018: //RootNode
+    3300000: Component#2
+    3300002: Component#26
+    3300004: Component#26 1
+    3300006: Component#6
+    3300008: Component#6 1
+    3300010: Google Earth Terrain
+    3300012: Group 12
+    3300014: Group 6
+    3300016: Group#4
+    3300018: //RootNode
+    4300000: Mesh GuggenheimMuseum
+    4300002: Mesh Google Earth Terrain
+    4300004: Mesh Group 6
+    4300006: Mesh Component#2
+    4300008: Mesh Group#4
+    4300010: Mesh Group 12
+    4300012: Mesh Component#6
+    4300014: Mesh Component#26
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,20 +9,23 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Correct.unity
+    path: 
     guid: 26113d5fd350a4357ba00d57b0ad9c24
   - enabled: 0
-    path: Assets/Scenes/Wrong.unity
+    path: 
     guid: 601d07744dfc94799b9396034da49319
   - enabled: 0
-    path: Assets/Scenes/Wrong2.unity
+    path: 
     guid: 9e25d85a1efc148a9a6bb78181a7dd32
   - enabled: 0
-    path: Assets/Scenes/Wrong3.unity
+    path: 
     guid: 1becea790419a41f9839e79505d6a821
   - enabled: 0
-    path: Assets/Scenes/Wrong4.unity
+    path: 
     guid: b1176107e1bce4d5da705ed850073450
+  - enabled: 1
+    path: Assets/Scenes/AboutGame.unity
+    guid: fe26326aaab5d4d5b8665b6b2bfe15ae
   - enabled: 1
     path: Assets/Scenes/Levels.unity
     guid: 8616125fc7c2b4164b4a9419018434d2
@@ -98,4 +101,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene23.unity
     guid: 3ef09afbc184c4c40a870080e2ccebd2
+  - enabled: 1
+    path: Assets/Scenes/Scene24.unity
+    guid: 55b7a46929723426b822c575e2e1507f
+  - enabled: 1
+    path: Assets/Scenes/Scene25.unity
+    guid: 7fc60eb8f6bfd485e8a29dbe9ad9b8df
+  - enabled: 1
+    path: Assets/Scenes/Scene26.unity
+    guid: d13df407d33d54cd7a188bb6151c4a01
+  - enabled: 1
+    path: Assets/Scenes/Scene27.unity
+    guid: 35e6a93eaa8884babb4e132566287044
+  - enabled: 1
+    path: Assets/Scenes/Scene28.unity
+    guid: 0b2869b9f23af43beb1296676b64dedb
+  - enabled: 1
+    path: Assets/Scenes/Scene29.unity
+    guid: dee224722c13440aa8980eedcd9520b9
+  - enabled: 1
+    path: Assets/Scenes/Scene30.unity
+    guid: 896a4982ba6f94f6f840ac35fe72848a
+  - enabled: 1
+    path: Assets/Scenes/GameStats.unity
+    guid: c079154c9be1345de97343d47b257eb5
+  - enabled: 1
+    path: Assets/Scenes/Answers.unity
+    guid: b1b80c2c8cf044d5ebbff54fe61903ac
   m_configObjects: {}

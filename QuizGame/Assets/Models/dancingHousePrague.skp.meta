@@ -1,0 +1,690 @@
+fileFormatVersion: 2
+guid: 544d5d8aac1644c59a77737c365bd384
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f0100001001000011010000
+  assetHash:
+    serializedVersion: 2
+    Hash: dc0066254482c0bd28f421a4e5ca4129
+  longitude: 14.414077
+  latitude: 50.075444
+  northCorrection: 359.5506002236004
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -52.462124, y: 9.910128, z: 37.99522}
+      lookAt: {x: 26.337168, y: 26.112038, z: -17.752945}
+      up: {x: -0.1351358, y: 0.9862039, z: 0.095604576}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: balcon
+    100002: //RootNode
+    100004: fiestra 01
+    100006: fiestra 01 1
+    100008: fiestra 01 10
+    100010: fiestra 01 11
+    100012: fiestra 01 12
+    100014: fiestra 01 13
+    100016: fiestra 01 14
+    100018: fiestra 01 15
+    100020: fiestra 01 16
+    100022: fiestra 01 17
+    100024: fiestra 01 18
+    100026: fiestra 01 19
+    100028: fiestra 01 2
+    100030: fiestra 01 20
+    100032: fiestra 01 21
+    100034: fiestra 01 22
+    100036: fiestra 01 23
+    100038: fiestra 01 24
+    100040: fiestra 01 25
+    100042: fiestra 01 26
+    100044: fiestra 01 27
+    100046: fiestra 01 28
+    100048: fiestra 01 29
+    100050: fiestra 01 3
+    100052: fiestra 01 30
+    100054: fiestra 01 31
+    100056: fiestra 01 32
+    100058: fiestra 01 33
+    100060: fiestra 01 34
+    100062: fiestra 01 35
+    100064: fiestra 01 36
+    100066: fiestra 01 37
+    100068: fiestra 01 38
+    100070: fiestra 01 39
+    100072: fiestra 01 4
+    100074: fiestra 01 40
+    100076: fiestra 01 41
+    100078: fiestra 01 42
+    100080: fiestra 01 43
+    100082: fiestra 01 44
+    100084: fiestra 01 45
+    100086: fiestra 01 46
+    100088: fiestra 01 47
+    100090: fiestra 01 48
+    100092: fiestra 01 49
+    100094: fiestra 01 5
+    100096: fiestra 01 50
+    100098: fiestra 01 51
+    100100: fiestra 01 52
+    100102: fiestra 01 53
+    100104: fiestra 01 54
+    100106: fiestra 01 55
+    100108: fiestra 01 56
+    100110: fiestra 01 57
+    100112: fiestra 01 58
+    100114: fiestra 01 59
+    100116: fiestra 01 6
+    100118: fiestra 01 60
+    100120: fiestra 01 61
+    100122: fiestra 01 62
+    100124: fiestra 01 63
+    100126: fiestra 01 64
+    100128: fiestra 01 65
+    100130: fiestra 01 66
+    100132: fiestra 01 67
+    100134: fiestra 01 68
+    100136: fiestra 01 69
+    100138: fiestra 01 7
+    100140: fiestra 01 70
+    100142: fiestra 01 71
+    100144: fiestra 01 72
+    100146: fiestra 01 8
+    100148: fiestra 01 9
+    100150: fiestra 02
+    100152: fiestra 02 1
+    100154: fiestra 02 2
+    100156: fiestra 02 3
+    100158: fiestra 02 4
+    100160: fiestra 02 5
+    100162: fiestra 03
+    100164: fiestra 03 1
+    100166: fiestra 03 2
+    100168: fiestra 03 3
+    100170: fiestra 03 4
+    100172: fiestra 03 5
+    100174: fiestra 03 6
+    100176: fiestra tras
+    100178: fiestra tras 1
+    100180: fiestra tras 10
+    100182: fiestra tras 11
+    100184: fiestra tras 12
+    100186: fiestra tras 13
+    100188: fiestra tras 14
+    100190: fiestra tras 2
+    100192: fiestra tras 3
+    100194: fiestra tras 4
+    100196: fiestra tras 5
+    100198: fiestra tras 6
+    100200: fiestra tras 7
+    100202: fiestra tras 8
+    100204: fiestra tras 9
+    100206: fiestra tras#1
+    100208: fiestra tras#1 1
+    100210: fiestra tras#1 2
+    100212: fiestra tras#1 3
+    100214: fiestra tras#1 4
+    100216: fiestra tras#1 5
+    100218: fiestra tras#1 6
+    100220: fiestra tras#1 7
+    100222: fiestra tras#1 8
+    100224: fiestra tras#1 9
+    100226: Group 10
+    100228: Group 12
+    100230: Group 14
+    100232: Group 16
+    100234: Group 18
+    100236: Group 20
+    100238: Group 22
+    100240: Group 24
+    100242: Group 26
+    100244: Group 28
+    100246: Group 30
+    100248: Group 32
+    100250: Group 6
+    100252: Group 8
+    100254: pilar
+    100256: pilar 1
+    100258: pilar 2
+    100260: pilar 3
+    100262: pilar#1
+    100264: tubo
+    100266: tubo 1
+    100268: tubo 2
+    400000: balcon
+    400002: //RootNode
+    400004: fiestra 01
+    400006: fiestra 01 1
+    400008: fiestra 01 10
+    400010: fiestra 01 11
+    400012: fiestra 01 12
+    400014: fiestra 01 13
+    400016: fiestra 01 14
+    400018: fiestra 01 15
+    400020: fiestra 01 16
+    400022: fiestra 01 17
+    400024: fiestra 01 18
+    400026: fiestra 01 19
+    400028: fiestra 01 2
+    400030: fiestra 01 20
+    400032: fiestra 01 21
+    400034: fiestra 01 22
+    400036: fiestra 01 23
+    400038: fiestra 01 24
+    400040: fiestra 01 25
+    400042: fiestra 01 26
+    400044: fiestra 01 27
+    400046: fiestra 01 28
+    400048: fiestra 01 29
+    400050: fiestra 01 3
+    400052: fiestra 01 30
+    400054: fiestra 01 31
+    400056: fiestra 01 32
+    400058: fiestra 01 33
+    400060: fiestra 01 34
+    400062: fiestra 01 35
+    400064: fiestra 01 36
+    400066: fiestra 01 37
+    400068: fiestra 01 38
+    400070: fiestra 01 39
+    400072: fiestra 01 4
+    400074: fiestra 01 40
+    400076: fiestra 01 41
+    400078: fiestra 01 42
+    400080: fiestra 01 43
+    400082: fiestra 01 44
+    400084: fiestra 01 45
+    400086: fiestra 01 46
+    400088: fiestra 01 47
+    400090: fiestra 01 48
+    400092: fiestra 01 49
+    400094: fiestra 01 5
+    400096: fiestra 01 50
+    400098: fiestra 01 51
+    400100: fiestra 01 52
+    400102: fiestra 01 53
+    400104: fiestra 01 54
+    400106: fiestra 01 55
+    400108: fiestra 01 56
+    400110: fiestra 01 57
+    400112: fiestra 01 58
+    400114: fiestra 01 59
+    400116: fiestra 01 6
+    400118: fiestra 01 60
+    400120: fiestra 01 61
+    400122: fiestra 01 62
+    400124: fiestra 01 63
+    400126: fiestra 01 64
+    400128: fiestra 01 65
+    400130: fiestra 01 66
+    400132: fiestra 01 67
+    400134: fiestra 01 68
+    400136: fiestra 01 69
+    400138: fiestra 01 7
+    400140: fiestra 01 70
+    400142: fiestra 01 71
+    400144: fiestra 01 72
+    400146: fiestra 01 8
+    400148: fiestra 01 9
+    400150: fiestra 02
+    400152: fiestra 02 1
+    400154: fiestra 02 2
+    400156: fiestra 02 3
+    400158: fiestra 02 4
+    400160: fiestra 02 5
+    400162: fiestra 03
+    400164: fiestra 03 1
+    400166: fiestra 03 2
+    400168: fiestra 03 3
+    400170: fiestra 03 4
+    400172: fiestra 03 5
+    400174: fiestra 03 6
+    400176: fiestra tras
+    400178: fiestra tras 1
+    400180: fiestra tras 10
+    400182: fiestra tras 11
+    400184: fiestra tras 12
+    400186: fiestra tras 13
+    400188: fiestra tras 14
+    400190: fiestra tras 2
+    400192: fiestra tras 3
+    400194: fiestra tras 4
+    400196: fiestra tras 5
+    400198: fiestra tras 6
+    400200: fiestra tras 7
+    400202: fiestra tras 8
+    400204: fiestra tras 9
+    400206: fiestra tras#1
+    400208: fiestra tras#1 1
+    400210: fiestra tras#1 2
+    400212: fiestra tras#1 3
+    400214: fiestra tras#1 4
+    400216: fiestra tras#1 5
+    400218: fiestra tras#1 6
+    400220: fiestra tras#1 7
+    400222: fiestra tras#1 8
+    400224: fiestra tras#1 9
+    400226: Group 10
+    400228: Group 12
+    400230: Group 14
+    400232: Group 16
+    400234: Group 18
+    400236: Group 20
+    400238: Group 22
+    400240: Group 24
+    400242: Group 26
+    400244: Group 28
+    400246: Group 30
+    400248: Group 32
+    400250: Group 6
+    400252: Group 8
+    400254: pilar
+    400256: pilar 1
+    400258: pilar 2
+    400260: pilar 3
+    400262: pilar#1
+    400264: tubo
+    400266: tubo 1
+    400268: tubo 2
+    2100000: _defaultMat
+    2100002: Google Earth Snapshot
+    2100004: '[Cladding_Stucco_White]'
+    2100006: 85151377.Pgjh4DKb#2
+    2100008: fachada torre 01
+    2100010: 85151377.Pgjh4DKb#3
+    2100012: 85151377.Pgjh4DKb#1
+    2100014: fachada praza
+    2100016: Metal_Brushed
+    2100018: baranda
+    2100020: '[Stone_Pavers_Walk]'
+    2100022: 85151377.Pgjh4DKb.IMG_2616s
+    2100024: 85151377.Pgjh4DKb
+    2100026: viseira
+    2100028: cebola
+    2100030: proba vidro 03
+    2100032: proba vidro 01
+    2100034: proba vidro 02
+    2300000: balcon
+    2300002: //RootNode
+    2300004: fiestra 01
+    2300006: fiestra 01 1
+    2300008: fiestra 01 10
+    2300010: fiestra 01 11
+    2300012: fiestra 01 12
+    2300014: fiestra 01 13
+    2300016: fiestra 01 14
+    2300018: fiestra 01 15
+    2300020: fiestra 01 16
+    2300022: fiestra 01 17
+    2300024: fiestra 01 18
+    2300026: fiestra 01 19
+    2300028: fiestra 01 2
+    2300030: fiestra 01 20
+    2300032: fiestra 01 21
+    2300034: fiestra 01 22
+    2300036: fiestra 01 23
+    2300038: fiestra 01 24
+    2300040: fiestra 01 25
+    2300042: fiestra 01 26
+    2300044: fiestra 01 27
+    2300046: fiestra 01 28
+    2300048: fiestra 01 29
+    2300050: fiestra 01 3
+    2300052: fiestra 01 30
+    2300054: fiestra 01 31
+    2300056: fiestra 01 32
+    2300058: fiestra 01 33
+    2300060: fiestra 01 34
+    2300062: fiestra 01 35
+    2300064: fiestra 01 36
+    2300066: fiestra 01 37
+    2300068: fiestra 01 38
+    2300070: fiestra 01 39
+    2300072: fiestra 01 4
+    2300074: fiestra 01 40
+    2300076: fiestra 01 41
+    2300078: fiestra 01 42
+    2300080: fiestra 01 43
+    2300082: fiestra 01 44
+    2300084: fiestra 01 45
+    2300086: fiestra 01 46
+    2300088: fiestra 01 47
+    2300090: fiestra 01 48
+    2300092: fiestra 01 49
+    2300094: fiestra 01 5
+    2300096: fiestra 01 50
+    2300098: fiestra 01 51
+    2300100: fiestra 01 52
+    2300102: fiestra 01 53
+    2300104: fiestra 01 54
+    2300106: fiestra 01 55
+    2300108: fiestra 01 56
+    2300110: fiestra 01 57
+    2300112: fiestra 01 58
+    2300114: fiestra 01 59
+    2300116: fiestra 01 6
+    2300118: fiestra 01 60
+    2300120: fiestra 01 61
+    2300122: fiestra 01 62
+    2300124: fiestra 01 63
+    2300126: fiestra 01 64
+    2300128: fiestra 01 65
+    2300130: fiestra 01 66
+    2300132: fiestra 01 67
+    2300134: fiestra 01 68
+    2300136: fiestra 01 69
+    2300138: fiestra 01 7
+    2300140: fiestra 01 70
+    2300142: fiestra 01 71
+    2300144: fiestra 01 72
+    2300146: fiestra 01 8
+    2300148: fiestra 01 9
+    2300150: fiestra 02
+    2300152: fiestra 02 1
+    2300154: fiestra 02 2
+    2300156: fiestra 02 3
+    2300158: fiestra 02 4
+    2300160: fiestra 02 5
+    2300162: fiestra 03
+    2300164: fiestra 03 1
+    2300166: fiestra 03 2
+    2300168: fiestra 03 3
+    2300170: fiestra 03 4
+    2300172: fiestra 03 5
+    2300174: fiestra 03 6
+    2300176: fiestra tras
+    2300178: fiestra tras 1
+    2300180: fiestra tras 10
+    2300182: fiestra tras 11
+    2300184: fiestra tras 12
+    2300186: fiestra tras 13
+    2300188: fiestra tras 14
+    2300190: fiestra tras 2
+    2300192: fiestra tras 3
+    2300194: fiestra tras 4
+    2300196: fiestra tras 5
+    2300198: fiestra tras 6
+    2300200: fiestra tras 7
+    2300202: fiestra tras 8
+    2300204: fiestra tras 9
+    2300206: fiestra tras#1
+    2300208: fiestra tras#1 1
+    2300210: fiestra tras#1 2
+    2300212: fiestra tras#1 3
+    2300214: fiestra tras#1 4
+    2300216: fiestra tras#1 5
+    2300218: fiestra tras#1 6
+    2300220: fiestra tras#1 7
+    2300222: fiestra tras#1 8
+    2300224: fiestra tras#1 9
+    2300226: Group 10
+    2300228: Group 12
+    2300230: Group 14
+    2300232: Group 16
+    2300234: Group 18
+    2300236: Group 20
+    2300238: Group 22
+    2300240: Group 24
+    2300242: Group 26
+    2300244: Group 28
+    2300246: Group 30
+    2300248: Group 32
+    2300250: Group 6
+    2300252: Group 8
+    2300254: pilar
+    2300256: pilar 1
+    2300258: pilar 2
+    2300260: pilar 3
+    2300262: pilar#1
+    2300264: tubo
+    2300266: tubo 1
+    2300268: tubo 2
+    3300000: balcon
+    3300002: //RootNode
+    3300004: fiestra 01
+    3300006: fiestra 01 1
+    3300008: fiestra 01 10
+    3300010: fiestra 01 11
+    3300012: fiestra 01 12
+    3300014: fiestra 01 13
+    3300016: fiestra 01 14
+    3300018: fiestra 01 15
+    3300020: fiestra 01 16
+    3300022: fiestra 01 17
+    3300024: fiestra 01 18
+    3300026: fiestra 01 19
+    3300028: fiestra 01 2
+    3300030: fiestra 01 20
+    3300032: fiestra 01 21
+    3300034: fiestra 01 22
+    3300036: fiestra 01 23
+    3300038: fiestra 01 24
+    3300040: fiestra 01 25
+    3300042: fiestra 01 26
+    3300044: fiestra 01 27
+    3300046: fiestra 01 28
+    3300048: fiestra 01 29
+    3300050: fiestra 01 3
+    3300052: fiestra 01 30
+    3300054: fiestra 01 31
+    3300056: fiestra 01 32
+    3300058: fiestra 01 33
+    3300060: fiestra 01 34
+    3300062: fiestra 01 35
+    3300064: fiestra 01 36
+    3300066: fiestra 01 37
+    3300068: fiestra 01 38
+    3300070: fiestra 01 39
+    3300072: fiestra 01 4
+    3300074: fiestra 01 40
+    3300076: fiestra 01 41
+    3300078: fiestra 01 42
+    3300080: fiestra 01 43
+    3300082: fiestra 01 44
+    3300084: fiestra 01 45
+    3300086: fiestra 01 46
+    3300088: fiestra 01 47
+    3300090: fiestra 01 48
+    3300092: fiestra 01 49
+    3300094: fiestra 01 5
+    3300096: fiestra 01 50
+    3300098: fiestra 01 51
+    3300100: fiestra 01 52
+    3300102: fiestra 01 53
+    3300104: fiestra 01 54
+    3300106: fiestra 01 55
+    3300108: fiestra 01 56
+    3300110: fiestra 01 57
+    3300112: fiestra 01 58
+    3300114: fiestra 01 59
+    3300116: fiestra 01 6
+    3300118: fiestra 01 60
+    3300120: fiestra 01 61
+    3300122: fiestra 01 62
+    3300124: fiestra 01 63
+    3300126: fiestra 01 64
+    3300128: fiestra 01 65
+    3300130: fiestra 01 66
+    3300132: fiestra 01 67
+    3300134: fiestra 01 68
+    3300136: fiestra 01 69
+    3300138: fiestra 01 7
+    3300140: fiestra 01 70
+    3300142: fiestra 01 71
+    3300144: fiestra 01 72
+    3300146: fiestra 01 8
+    3300148: fiestra 01 9
+    3300150: fiestra 02
+    3300152: fiestra 02 1
+    3300154: fiestra 02 2
+    3300156: fiestra 02 3
+    3300158: fiestra 02 4
+    3300160: fiestra 02 5
+    3300162: fiestra 03
+    3300164: fiestra 03 1
+    3300166: fiestra 03 2
+    3300168: fiestra 03 3
+    3300170: fiestra 03 4
+    3300172: fiestra 03 5
+    3300174: fiestra 03 6
+    3300176: fiestra tras
+    3300178: fiestra tras 1
+    3300180: fiestra tras 10
+    3300182: fiestra tras 11
+    3300184: fiestra tras 12
+    3300186: fiestra tras 13
+    3300188: fiestra tras 14
+    3300190: fiestra tras 2
+    3300192: fiestra tras 3
+    3300194: fiestra tras 4
+    3300196: fiestra tras 5
+    3300198: fiestra tras 6
+    3300200: fiestra tras 7
+    3300202: fiestra tras 8
+    3300204: fiestra tras 9
+    3300206: fiestra tras#1
+    3300208: fiestra tras#1 1
+    3300210: fiestra tras#1 2
+    3300212: fiestra tras#1 3
+    3300214: fiestra tras#1 4
+    3300216: fiestra tras#1 5
+    3300218: fiestra tras#1 6
+    3300220: fiestra tras#1 7
+    3300222: fiestra tras#1 8
+    3300224: fiestra tras#1 9
+    3300226: Group 10
+    3300228: Group 12
+    3300230: Group 14
+    3300232: Group 16
+    3300234: Group 18
+    3300236: Group 20
+    3300238: Group 22
+    3300240: Group 24
+    3300242: Group 26
+    3300244: Group 28
+    3300246: Group 30
+    3300248: Group 32
+    3300250: Group 6
+    3300252: Group 8
+    3300254: pilar
+    3300256: pilar 1
+    3300258: pilar 2
+    3300260: pilar 3
+    3300262: pilar#1
+    3300264: tubo
+    3300266: tubo 1
+    3300268: tubo 2
+    4300000: Mesh dancingHousePrague
+    4300002: Mesh Group 6
+    4300004: Mesh Group 8
+    4300006: Mesh Group 10
+    4300008: Mesh Group 12
+    4300010: Mesh Group 14
+    4300012: Mesh Group 16
+    4300014: Mesh Group 18
+    4300016: Mesh Group 20
+    4300018: Mesh Group 22
+    4300020: Mesh Group 24
+    4300022: Mesh Group 26
+    4300024: Mesh fiestra 01
+    4300026: Mesh fiestra tras
+    4300028: Mesh fiestra tras#1
+    4300030: Mesh fiestra 02
+    4300032: Mesh fiestra 03
+    4300034: Mesh balcon
+    4300036: Mesh pilar#1
+    4300038: Mesh pilar
+    4300040: Mesh tubo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,18 +2,12 @@
 using UnityEngine;
 using TMPro;
 
+/* Make the text mesh pro to wave*/
 public class TextMeshProWaver : MonoBehaviour
 {
-
     private TextMeshPro textpro;
     public float CurveScale = 1.0f;
-    private struct VertexAnim {
-
-        //public float angleRange;
-        // public float angle;
-        public float speed;
-    }
-
+ 
     public AnimationCurve VertexCurve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(0.25f, 2.0f), new Keyframe(0.5f, 0), new Keyframe(0.75f, 2.0f), new Keyframe(1, 0f));
 
     private void Awake()
@@ -59,7 +53,6 @@ public class TextMeshProWaver : MonoBehaviour
             textpro.mesh.colors32 = textpro.textInfo.meshInfo[0].colors32;
 
             yield return new WaitForSeconds(0.025f);
-
 
         }
 

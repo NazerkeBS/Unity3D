@@ -13,6 +13,7 @@ public class ShowHint : MonoBehaviour
     {
         timeElapsed = 4;
         StartCoroutine("EnableObject");
+        UsedHintCounter.sum += 1;
     }
     private void Update()
     {

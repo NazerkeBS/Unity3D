@@ -1,41 +1,28 @@
 ﻿using UnityEngine;
-using TMPro;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
+/*This class manages game Level 6*/
 public class ManageChoicesAndHints : MonoBehaviour
 {
     public GameObject choiceManager;
-    public GameObject hintManager;
     public GameObject correctMusicPlayer, wrongMusicPlayer;
     public TimeWaiter waiter;
-    public GameObject descriptor;
-    public GameObject flag;
-    public GameObject modelName;
     public GameObject hintMusicPlayer;
-    public GameObject a, d;
+    public GameObject d;
 
     private Transform[] choices;
-    private Transform[] hints;
-   
-    private List<string> names = new List<string>();
-    private List<string> nameHints = new List<string>();
-    // Start is called before the first frame update
+    private List<string> list;
     void Start()
     {
         choices = choiceManager.GetComponentsInChildren<Transform>();
-        hints = hintManager.GetComponentsInChildren<Transform>();
-        names.Add("ChoiceA");
-        names.Add("ChoiceB");
-        names.Add("ChoiceC");
-        names.Add("ChoiceD");
-
-        nameHints.Add("HintFlag");
-        nameHints.Add("Fifty");
-        nameHints.Add("Name");
-
+        list = new List<string>();
+        foreach(Transform t in choices) {
+            list.Add(t.name);
+            
+        }
     }
-    // Update is called once per frame
+   
     void Update()
     {
 
@@ -44,95 +31,92 @@ public class ManageChoicesAndHints : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
+
+            if(Physics.Raycast(ray,out hit)) {
+                if (hit.transform.name == "RemoveOne")
+                {
+                    if (d.activeSelf) {
+                        d.SetActive(false);
+                        HintMusicPLay();
+                        waiter.Wait(3, () => { hintMusicPlayer.GetComponent<AudioSource>().Stop(); });
+                    }
+
+                }
+            }
+
             if (Physics.Raycast(ray, out hit))
             {
-                if (names.Contains(hit.transform.name))
                 {
-                    if(hit.transform.GetComponentInChildren<TextMeshPro>().text == "New York") { 
-                        foreach(Transform t in choices)
+                    if (SceneManager.GetActiveScene().name=="Scene21") {
+                         if (hit.transform.name=="ChoiceC")
+                         { 
+                            CorrectAnswer(hit);
+                         }
+                        if (hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceD") 
                         {
-                            if (hit.transform.Equals(t)) {
-                                musicPlay(correctMusicPlayer);
-                                t.GetComponent<Renderer>().material.color = Color.green;
-                                ScoreCounter.sum += 5;
-                                waiter.Wait(3, () => { SceneManager.LoadScene("Scene22"); });
-                            }
+                            WrongAnswer(hit);
                         }
                     }
-                    else {
-                        foreach (Transform t in choices)
+                    if (SceneManager.GetActiveScene().name == "Scene22")
+                    {
+                        if (hit.transform.name == "ChoiceA") //Athens
                         {
-                            if (hit.transform.Equals(t))
-                            {
-                                musicPlay(wrongMusicPlayer);
-                                t.GetComponent<Renderer>().material.color = Color.red;
-
-                                waiter.Wait(2, () => { foreach (Transform transform in choices) {
-                                        Destroy(transform.gameObject);
-                                        Destroy(wrongMusicPlayer.gameObject);
-                                        enabled = false;
-                                        descriptor.SetActive(true);
-                                    } });
-
-                                waiter.Wait(5, () => { SceneManager.LoadScene("Scene22"); });
-
-                            }
+                            CorrectAnswer(hit);
                         }
-
+                        if (hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceD")
+                        {
+                            WrongAnswer(hit);
+                        }
                     }
+                    if (SceneManager.GetActiveScene().name == "Scene23")
+                    {
+                        if (hit.transform.name == "ChoiceB") // London
+                        {
+                            CorrectAnswer(hit);
+                        }
+                        if (hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceD")
+                        {
+                            WrongAnswer(hit);
+                        }
+                    }
+
                 }
-                if (nameHints.Contains(hit.transform.name)) {
-                    if (hit.transform.name == "Name") {
-                        if (!modelName.activeSelf) {
-                            HintMusicPLay();
-                            modelName.SetActive(true);
-                        }
-                        waiter.Wait(5, () => {
-                            HintMusicStop();
-                            modelName.SetActive(false);
-                        });
-                    }
-                    else if(hit.transform.name == "HintFlag") {
-                        if (!flag.activeSelf) {
-
-                            HintMusicPLay();
-                            flag.SetActive(true);
-                        }
-                        waiter.Wait(5, () => {
-                            HintMusicStop();
-                            flag.SetActive(false);
-                        });
-                    }
-                    else if(hit.transform.name == "Fifty") {
-                        if (a.activeSelf) {
-                            HintMusicPLay();
-                            a.SetActive(false);
-                            d.SetActive(false);
-                        }
-                        waiter.Wait(3, () => {
-                            hintMusicPlayer.GetComponent<AudioSource>().Stop();
-                        });
-                    }
-
-                   
-                }
-
             }
         }
-       
-       
+   
     }
 
    private void HintMusicPLay() {
         hintMusicPlayer.GetComponent<AudioSource>().playOnAwake = true;
         hintMusicPlayer.GetComponent<AudioSource>().Play();
     }
-    private void HintMusicStop() {
-        hintMusicPlayer.GetComponent<AudioSource>().Stop();
-    }
-    private void musicPlay(GameObject o) {
-
+   
+    private void MusicPlay(GameObject o) {
         o.GetComponent<AudioSource>().playOnAwake = true;
         o.GetComponent<AudioSource>().Play();
+    }
+    private void WrongAnswer(RaycastHit hit) {
+        MusicPlay(wrongMusicPlayer);
+        foreach (Transform t in choices)
+        {
+            if (t.Equals(hit.transform))
+            {
+                t.GetComponent<Renderer>().material.color = Color.red;
+            }
+        }
+        waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
+    }
+
+    private void CorrectAnswer(RaycastHit hit) {
+        MusicPlay(correctMusicPlayer);
+        foreach (Transform t in choices)
+        {
+            if (t.Equals(hit.transform))
+            {
+                t.GetComponent<Renderer>().material.color = Color.green;
+            }
+        }
+        ScoreCounter.sum += 30;
+        waiter.Wait(4, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
     }
 }

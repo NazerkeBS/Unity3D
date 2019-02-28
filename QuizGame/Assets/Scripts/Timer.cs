@@ -9,12 +9,11 @@ public class Timer : MonoBehaviour
     private int timeLeft = 30;
     public Image loading;
 
-    static int index = 11;
+
 
     void Start()
     {
         StartCoroutine("LoseTime");
-        index++;
     }
 
     private void Update()
@@ -24,7 +23,7 @@ public class Timer : MonoBehaviour
         if(timeLeft <= 0) {
             StopCoroutine("LoseTime");
             text.text = "Time Up";
-            SceneManager.LoadScene(index);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
     }
 
