@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*This class manages the game level 5*/
 public class InputFieldHandler : MonoBehaviour
 {
     public GameObject input;
@@ -32,7 +33,8 @@ public class InputFieldHandler : MonoBehaviour
                 AudioSource a = correctMusicPlayer.GetComponent<AudioSource>();
                 a.playOnAwake = true;
                 a.Play();
-                ScoreCounter.sum += 30;
+                ScoreCounter.sum += 25;
+                CorrectAnswerCounter.sum += 1;
                 waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
 
             }
@@ -52,7 +54,8 @@ public class InputFieldHandler : MonoBehaviour
                 AudioSource a = correctMusicPlayer.GetComponent<AudioSource>();
                 a.playOnAwake = true;
                 a.Play();
-                ScoreCounter.sum += 30;
+                ScoreCounter.sum += 25;
+                CorrectAnswerCounter.sum += 1;
                 waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
 
             }
@@ -72,7 +75,8 @@ public class InputFieldHandler : MonoBehaviour
                 AudioSource a = correctMusicPlayer.GetComponent<AudioSource>();
                 a.playOnAwake = true;
                 a.Play();
-                ScoreCounter.sum += 30;
+                ScoreCounter.sum += 25;
+                CorrectAnswerCounter.sum += 1;
                 waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
 
             }
@@ -92,9 +96,28 @@ public class InputFieldHandler : MonoBehaviour
                 AudioSource a = correctMusicPlayer.GetComponent<AudioSource>();
                 a.playOnAwake = true;
                 a.Play();
-                ScoreCounter.sum += 30;
+                ScoreCounter.sum += 25;
+                CorrectAnswerCounter.sum += 1;
                 waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
-
+            }
+            else
+            {
+                Debug.Log("Incorrect");
+                colorBlock.normalColor = Color.red;
+                txt.colors = colorBlock;
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "Scene20B")
+        {
+            if (str.ToLower() == "newyork" || str.ToLower() == "new york")
+            {
+                txt.interactable = false;
+                AudioSource a = correctMusicPlayer.GetComponent<AudioSource>();
+                a.playOnAwake = true;
+                a.Play();
+                ScoreCounter.sum += 25;
+                CorrectAnswerCounter.sum += 1;
+                waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
             }
             else
             {

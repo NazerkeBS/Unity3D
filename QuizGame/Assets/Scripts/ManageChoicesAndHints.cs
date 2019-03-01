@@ -38,6 +38,7 @@ public class ManageChoicesAndHints : MonoBehaviour
                     if (d.activeSelf) {
                         d.SetActive(false);
                         HintMusicPLay();
+                        UsedHintCounter.sum += 1;
                         waiter.Wait(3, () => { hintMusicPlayer.GetComponent<AudioSource>().Stop(); });
                     }
 
@@ -79,6 +80,28 @@ public class ManageChoicesAndHints : MonoBehaviour
                             WrongAnswer(hit);
                         }
                     }
+                    if (SceneManager.GetActiveScene().name == "Scene24")
+                    {
+                        if (hit.transform.name == "ChoiceA") // Astana
+                        {
+                            CorrectAnswer(hit);
+                        }
+                        if (hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceD")
+                        {
+                            WrongAnswer(hit);
+                        }
+                    }
+                    if (SceneManager.GetActiveScene().name == "Scene25")
+                    {
+                        if (hit.transform.name == "ChoiceD") // London
+                        {
+                            CorrectAnswer(hit);
+                        }
+                        if (hit.transform.name == "ChoiceA" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceB")
+                        {
+                            WrongAnswer(hit);
+                        }
+                    }
 
                 }
             }
@@ -102,6 +125,7 @@ public class ManageChoicesAndHints : MonoBehaviour
             if (t.Equals(hit.transform))
             {
                 t.GetComponent<Renderer>().material.color = Color.red;
+                WrongAnswerCounter.sum += 1;
             }
         }
         waiter.Wait(3, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
@@ -114,9 +138,10 @@ public class ManageChoicesAndHints : MonoBehaviour
             if (t.Equals(hit.transform))
             {
                 t.GetComponent<Renderer>().material.color = Color.green;
+                ScoreCounter.sum += 30;
+                CorrectAnswerCounter.sum += 1;
             }
         }
-        ScoreCounter.sum += 30;
         waiter.Wait(4, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
     }
 }

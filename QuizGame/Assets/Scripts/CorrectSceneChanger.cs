@@ -79,6 +79,25 @@ public class CorrectSceneChanger : MonoBehaviour
 
                     }
                 }
+                else if (SceneManager.GetActiveScene().name == "SceneLastLevel1")
+                {
+                    Transform[] buttons = level1Manager.GetComponentsInChildren<Transform>();
+                    if (hit.transform.name == "ChoiceD")//Prague
+                    { 
+                        CorrectAnswerCounter.sum += 1;
+                        InOrderCorrectAnswer(buttons);
+                    }
+                    else if (hit.transform.name == "ChoiceB" || hit.transform.name == "ChoiceC" || hit.transform.name == "ChoiceA")
+                    {
+                        WrongAnswerCounter.sum += 1;
+                        HideButtons(buttons);
+                        DisableObjects();
+                        ActivateAndPlayWrongMusicPlayer();
+                        ChangeScene();
+
+
+                    }
+                }
 
             }
         }

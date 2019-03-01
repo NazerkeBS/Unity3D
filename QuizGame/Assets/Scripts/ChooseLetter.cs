@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+/*This class manages the game Level 2 */
 public class ChooseLetter : MonoBehaviour
 {
 
@@ -50,24 +52,28 @@ public class ChooseLetter : MonoBehaviour
             {
                 PrintCongrats();
                 ScoreCounter.sum += 10;
+                CorrectAnswerCounter.sum += 1;
                 NextScene("Scene6");
             }
 
             if (result != "BUDAPEST")
             {
                 ClearInputField(blankButtons);
+                WrongAnswerCounter.sum += 1;
             }
         }else if (SceneManager.GetActiveScene().name.Equals("Scene6")) {
             if (result == "HIMEJI")
             {
                 PrintCongrats();
                 ScoreCounter.sum += 10;
+                CorrectAnswerCounter.sum += 1;
                 NextScene("Scene7");
             }
 
             if (result != "HIMEJI")
             {
                 ClearInputField(blankButtons);
+                WrongAnswerCounter.sum += 1;
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Scene7"))
@@ -76,12 +82,14 @@ public class ChooseLetter : MonoBehaviour
             {
                 PrintCongrats();
                 ScoreCounter.sum += 10;
+                CorrectAnswerCounter.sum += 1;
                 NextScene("Scene8");
             }
 
             if (result != "BARCELONA")
             {
                 ClearInputField(blankButtons);
+                WrongAnswerCounter.sum += 1;
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Scene8"))
@@ -90,12 +98,32 @@ public class ChooseLetter : MonoBehaviour
             {
                 PrintCongrats();
                 ScoreCounter.sum += 10;
+                CorrectAnswerCounter.sum += 1;
                 NextScene("Scene9");
             }
 
             if (result != "NEWYORK")
             {
                 ClearInputField(blankButtons);
+                WrongAnswerCounter.sum += 1;
+            }
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("SceneLastLevel2"))
+        {
+            if (result == "MECCA")
+            {
+                PrintCongrats();
+                ScoreCounter.sum += 10;
+                CorrectAnswerCounter.sum += 1;
+                waiter = FindObjectOfType<TimeWaiter>();
+                waiter.Wait(5, () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); });
+
+            }
+
+            if (result != "MECCA")
+            {
+                ClearInputField(blankButtons);
+                WrongAnswerCounter.sum += 1;
             }
         }
 

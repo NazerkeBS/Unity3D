@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/*This class manages the game Level 4 */
 public class DragAndDrop : MonoBehaviour
 {
     private bool isMouseDown;
@@ -110,6 +111,34 @@ public class DragAndDrop : MonoBehaviour
                     }
                     ChangeScene("Scene17");
                 }
+                if (SceneManager.GetActiveScene().name == "Scene16A")
+                {
+                    if (text.text == "New Delhi")
+                    {
+                        Debug.Log("Correct");
+                        CorrectAnswerPlay(backgroundMusic);
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong");
+                        WrongAnswerPlay(backgroundMusic);
+                    }
+                    ChangeScene("Scene16B");
+                }
+                if (SceneManager.GetActiveScene().name == "Scene16B")
+                {
+                    if (text.text == "Berlin")
+                    {
+                        Debug.Log("Correct");
+                        CorrectAnswerPlay(backgroundMusic);
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong");
+                        WrongAnswerPlay(backgroundMusic);
+                    }
+                    ChangeScene("Scene17");
+                }
 
             }
 
@@ -140,6 +169,7 @@ public class DragAndDrop : MonoBehaviour
         correctMusicPlay.Play();
         shaderColor.material.color = Color.green;
         ScoreIncrement();
+        CorrectAnswerCounter.sum += 1;
     }
 
     private void WrongAnswerPlay(AudioSource backgroundMusic) {
@@ -149,6 +179,7 @@ public class DragAndDrop : MonoBehaviour
         backgroundMusic.Stop();
         wrongMusicPlay.Play();
         shaderColor.material.color = Color.red;
+        WrongAnswerCounter.sum += 1;
     }
 
     private void ChangeScene(string sceneName) {
@@ -161,7 +192,7 @@ public class DragAndDrop : MonoBehaviour
                 t.gameObject.SetActive(false);
             }
         });
-        waiter.Wait(3, () => {
+        waiter.Wait(5, () => {
             SceneManager.LoadScene(sceneName);
             wrongMusicPlayer.gameObject.SetActive(false);
             correctMusicPlayer.gameObject.SetActive(false);
