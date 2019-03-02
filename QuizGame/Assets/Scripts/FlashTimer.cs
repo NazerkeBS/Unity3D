@@ -3,18 +3,22 @@ using UnityEngine.UI;
 
 public class FlashTimer : MonoBehaviour
 {
-    private float timer;
+    private float timeToFlash;
+    void Start()
+    {
+        timeToFlash = Timer.timeLeft;
 
+    }
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if(timer >= 0.5) {
+        timeToFlash += Time.deltaTime;
+        if(timeToFlash >= 0.5) {
             GetComponent<Text>().enabled = true;
         }
-        if(timer >= 1) {
+        if(timeToFlash >= 1) {
             GetComponent<Text>().enabled = false;
-            timer = 0;
+            timeToFlash = 0;
         
         }
 

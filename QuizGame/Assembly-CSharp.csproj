@@ -161,6 +161,7 @@
     <Compile Include="Assets\Scripts\GlobeRotate.cs" />
     <Compile Include="Assets\Scripts\Hint.cs" />
     <Compile Include="Assets\Scripts\InputFieldHandler.cs" />
+    <Compile Include="Assets\Scripts\LevelsController.cs" />
     <Compile Include="Assets\Scripts\ManageChoicesAndHints.cs" />
     <Compile Include="Assets\Scripts\ManageHints.cs" />
     <Compile Include="Assets\Scripts\MoveFloatingText.cs" />
@@ -180,10 +181,12 @@
     <Compile Include="Assets\Scripts\ShowHint.cs" />
     <Compile Include="Assets\Scripts\SpinEarth.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
+    <Compile Include="Assets\Scripts\SwitchLevelController.cs" />
     <Compile Include="Assets\Scripts\TextMeshProWaver.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\TimeWaiter.cs" />
     <Compile Include="Assets\Scripts\UsedHintCounter.cs" />
+    <Compile Include="Assets\Scripts\WithoutTimer.cs" />
     <Compile Include="Assets\Scripts\WrongAnswerCounter.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
