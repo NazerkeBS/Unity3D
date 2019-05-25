@@ -5,9 +5,7 @@ public class StartGame : MonoBehaviour
 {
     public void PlayGame() {
         SceneManager.LoadScene("QuizGame");
-    
     }
-
     public void LevelsScene() {
         SceneManager.LoadScene("Levels");
     }
@@ -15,5 +13,4 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("AboutGame");
     }
-
 }

@@ -8,12 +8,15 @@ public class AnswersManager : MonoBehaviour
     private readonly float fadeTime = 10f;
     private bool displayInfo;
     private string description;
+    private Color c;
 
     private void Start()
     {
         text = model.GetComponentInChildren<TextMeshPro>();
         text.color = Color.clear;
-  
+        Renderer r = model.GetComponent<Renderer>();
+        c = r.material.color;
+
     }
     void Update()
     {
@@ -26,11 +29,15 @@ public class AnswersManager : MonoBehaviour
     private void OnMouseOver()
     {
         displayInfo = true;
+        Renderer r = model.GetComponent<Renderer>();
+        r.material.SetColor("_Color", Color.yellow);
     }
 
     private void OnMouseExit()
     {
         displayInfo = false;
+        Renderer r = model.GetComponent<Renderer>();
+        r.material.SetColor("_Color", c);
     }
 
     /* show the model name and its city */
@@ -39,6 +46,7 @@ public class AnswersManager : MonoBehaviour
         if (displayInfo) {
             if(model.name == "Eiffel") {
                 description = "Eiffel-Paris";
+
             }else if(model.name == "Pisa") {
                 description = "Pisa-Pisa";
             }else if (model.name == "petronas_layer1")
@@ -125,10 +133,11 @@ public class AnswersManager : MonoBehaviour
                 description = "Taipei 101 ";
             }
             text.text = description;
-            text.color = Color.Lerp(text.color, Color.white, fadeTime * Time.deltaTime);
+        
+            text.color = Color.Lerp(text.color, Color.green, fadeTime * Time.deltaTime);
         }
         else {
-
+          
             text.color = Color.Lerp(text.color, Color.clear, fadeTime * Time.deltaTime);
         }
 

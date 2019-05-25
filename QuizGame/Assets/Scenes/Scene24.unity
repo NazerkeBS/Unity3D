@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.79
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09394177, g: 0.24563295, b: 0.27887267, a: 0.79}
+  m_IndirectSpecularColor: {r: 0.09391159, g: 0.24558212, b: 0.2788269, a: 0.79}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -793,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.455}
   m_AnchorMax: {x: 1, y: 0.455}
-  m_AnchoredPosition: {x: -36.82241, y: 16.138094}
+  m_AnchoredPosition: {x: -35.77, y: 15.75}
   m_SizeDelta: {x: 866, y: 537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304641770
@@ -844,7 +844,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e75d024de178c49e1b9528c56626506c, type: 3}
-    m_FontSize: 260
+    m_FontSize: 120
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -3544,9 +3544,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2059412382}
   - component: {fileID: 2059412386}
+  - component: {fileID: 2059412383}
   - component: {fileID: 2059412385}
   - component: {fileID: 2059412384}
-  - component: {fileID: 2059412383}
   m_Layer: 0
   m_Name: ChoiceAText
   m_TagString: Untagged

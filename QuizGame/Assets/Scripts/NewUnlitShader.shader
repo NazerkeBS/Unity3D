@@ -4,7 +4,7 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
         
-        
+ 
         _Strength("Strength", Range(0,2)) = 1.0
         _Speed("Speed", Range(-200, 200)) = 100
     }

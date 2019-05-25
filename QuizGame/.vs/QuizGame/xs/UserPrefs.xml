@@ -1,13 +1,37 @@
 ﻿<Properties StartupConfiguration="{D7EF783E-1F81-FC80-230F-8503BB368E26}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Timer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AnswersManager.cs">
     <Files>
       <File FileName="Assets/Scripts/FlashTimer.cs" Line="23" Column="10" />
       <File FileName="Assets/Scripts/ScoreCounter.cs" Line="9" Column="1" />
       <File FileName="Assets/Scripts/WithoutTimer.cs" Line="10" Column="5" />
       <File FileName="Assets/Scripts/LevelsController.cs" Line="36" Column="44" />
-      <File FileName="Assets/Scripts/CorrectSceneChanger.cs" Line="32" Column="35" />
+      <File FileName="Assets/Scripts/CorrectSceneChanger.cs" Line="26" Column="21" />
       <File FileName="Assets/Scripts/SwitchLevelController.cs" Line="88" Column="14" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="50" Column="20" />
+      <File FileName="Assets/Scripts/Timer.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/StartGame.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/RotateTexture.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ScrollAboutGamePanel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ShowFloatingScore.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Hint.cs" Line="3" Column="1" />
+      <File FileName="Assets/Scripts/ChangeColor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/NewUnlitShader.shader" Line="62" Column="1" />
+      <File FileName="Assets/Scripts/ChooseLetter.cs" Line="57" Column="14" />
+      <File FileName="Assets/Scripts/ManageHints.cs" Line="99" Column="14" />
+      <File FileName="Assets/Scenes/Tests/UnitTestScript.cs" Line="14" Column="15" />
+      <File FileName="Assets/Scenes/Tests/Level2.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scenes/Tests/Level3.cs" Line="1" Column="26" />
+      <File FileName="Assets/Scenes/Tests/Level4.cs" Line="12" Column="15" />
+      <File FileName="Assets/Scripts/ChoiceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ClickNext.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CorrectAnswerCounter.cs" Line="2" Column="1" />
+      <File FileName="Assets/Scenes/Tests/Level5.cs" Line="1" Column="26" />
+      <File FileName="Assets/Scenes/Tests/Level6.cs" Line="17" Column="36" />
+      <File FileName="Assets/Scripts/BackMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChangeSkyBox.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Answers.cs" Line="7" Column="21" />
+      <File FileName="Assets/Scripts/AnswersManager.cs" Line="51" Column="43" />
+      <File FileName="Assets/Scripts/CheckCorrectAnswer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CanvasScaleUp.cs" Line="29" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
